@@ -15,19 +15,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="Linux下常用的一些指令集。包括查看系统、资源、磁盘和分区、网络、进程、用户、服务、程序、CPU信息、内存信息、系统、网卡信息。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/02/06/hello-world/index.html">
+<meta property="og:title" content="linux-operations-1">
+<meta property="og:url" content="http://yoursite.com/2017/02/09/linux-operations-1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-02-06T13:16:18.000Z">
+<meta property="og:description" content="Linux下常用的一些指令集。包括查看系统、资源、磁盘和分区、网络、进程、用户、服务、程序、CPU信息、内存信息、系统、网卡信息。">
+<meta property="og:updated_time" content="2017-02-09T13:11:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="linux-operations-1">
+<meta name="twitter:description" content="Linux下常用的一些指令集。包括查看系统、资源、磁盘和分区、网络、进程、用户、服务、程序、CPU信息、内存信息、系统、网卡信息。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +56,7 @@ Quick">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hello World | Hexo</title>
+<title>linux-operations-1 | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -263,11 +260,11 @@ Quick">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-linux-operations-1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/06/hello-world/" class="article-date">
-      <time datetime="2017-02-06T13:16:18.000Z" itemprop="datePublished">2017-02-06</time>
+      <a href="/2017/02/09/linux-operations-1/" class="article-date">
+      <time datetime="2017-02-09T12:55:25.000Z" itemprop="datePublished">2017-02-09</time>
 </a>
 
 
@@ -282,7 +279,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      linux-operations-1
     </h1>
   
 
@@ -290,6 +287,10 @@ Quick">
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/operation/">operation</a>
+    </div>
+
 
         
         <div class="clearfix"></div>
@@ -299,16 +300,20 @@ Quick">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>Linux下常用的一些指令集。<br>包括查看系统、资源、磁盘和分区、网络、进程、用户、服务、程序、CPU信息、内存信息、系统、网卡信息。<br><a id="more"></a></p>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">uname -a               # 查看内核/操作系统/CPU信息</div><div class="line">head -n 1 /etc/issue   # 查看操作系统版本</div><div class="line">cat /proc/cpuinfo      # 查看CPU信息</div><div class="line">hostname               # 查看计算机名</div><div class="line">lspci -tv              # 列出所有PCI设备</div><div class="line">lsusb -tv              # 列出所有USB设备</div><div class="line">lsmod                  # 列出加载的内核模块 </div><div class="line">env                    # 查看环境变量</div></pre></td></tr></table></figure>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">free -m                # 查看内存使用量和交换区使用量</div><div class="line">df -h                  # 查看各分区使用情况</div><div class="line">du -sh &lt;目录名&gt;        # 查看指定目录的大小</div><div class="line">grep MemTotal /proc/meminfo   # 查看内存总量</div><div class="line">grep MemFree /proc/meminfo    # 查看空闲内存量</div><div class="line">uptime                 # 查看系统运行时间、用户数、负载</div><div class="line">cat /proc/loadavg      # 查看系统负载</div></pre></td></tr></table></figure>
+<h2 id="磁盘和分区"><a href="#磁盘和分区" class="headerlink" title="磁盘和分区"></a>磁盘和分区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mount | column -t      # 查看挂接的分区状态</div><div class="line">fdisk -l               # 查看所有分区</div><div class="line">swapon -s              # 查看所有交换分区</div><div class="line">hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)</div><div class="line">dmesg | grep IDE       # 查看启动时IDE设备检测状况</div></pre></td></tr></table></figure>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ifconfig               # 查看所有网络接口的属性</div><div class="line">iptables -L            # 查看防火墙设置</div><div class="line">route -n               # 查看路由表</div><div class="line">netstat -lntp          # 查看所有监听端口</div><div class="line">netstat -antp          # 查看所有已经建立的连接</div><div class="line">netstat -s             # 查看网络统计信息</div></pre></td></tr></table></figure>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ps -ef                 # 查看所有进程</div><div class="line">top                    # 实时显示进程状态</div></pre></td></tr></table></figure>
+<h2 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">w                      # 查看活动用户</div><div class="line">id &lt;用户名&gt;            # 查看指定用户信息</div><div class="line">last                   # 查看用户登录日志</div><div class="line">cut -d: -f1 /etc/passwd   # 查看系统所有用户</div><div class="line">cut -d: -f1 /etc/group    # 查看系统所有组</div><div class="line">crontab -l             # 查看当前用户的计划任务</div></pre></td></tr></table></figure>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chkconfig --list | grep on    # 列出所有启动的系统服务</div><div class="line">chkconfig --list | grep on    # 列出所有启动的系统服务</div></pre></td></tr></table></figure>
+<h2 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -qa                # 查看所有安装的软件包</div></pre></td></tr></table></figure>
+<h2 id="查看CPU信息（型号）"><a href="#查看CPU信息（型号）" class="headerlink" title="查看CPU信息（型号）"></a>查看CPU信息（型号）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"># cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c </div><div class="line">      8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz </div><div class="line">   (看到有8个逻辑CPU, 也知道了CPU型号) </div><div class="line"></div><div class="line"># cat /proc/cpuinfo | grep physical | uniq -c </div><div class="line">      4 physical id      : 0 </div><div class="line">      4 physical id      : 1 </div><div class="line">   (说明实际上是两颗4核的CPU)</div><div class="line"></div><div class="line"># getconf LONG_BIT </div><div class="line">   32 </div><div class="line">   (说明当前CPU运行在32bit模式下, 但不代表CPU不支持64bit) </div><div class="line"></div><div class="line"># cat /proc/cpuinfo | grep flags | grep &apos; lm &apos; | wc -l </div><div class="line">   8 </div><div class="line">   (结果大于0, 说明支持64bit计算. lm指long mode, 支持lm则是64bit) </div><div class="line"></div><div class="line"></div><div class="line">再完整看cpu详细信息, 不过大部分我们都不关心而已. </div><div class="line"># dmidecode | grep &apos;Processor Information&apos;</div></pre></td></tr></table></figure>
+<h2 id="查看内-存信息"><a href="#查看内-存信息" class="headerlink" title="查看内 存信息"></a>查看内 存信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># cat /proc/meminfo</div></pre></td></tr></table></figure>
+<h2 id="查看系统信息"><a href="#查看系统信息" class="headerlink" title="查看系统信息"></a>查看系统信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># uname -a </div><div class="line">Linux euis1 2.6.9-55.ELsmp #1 SMP Fri Apr 20 17:03:35 EDT 2007 i686 i686 i386 GNU/Linux </div><div class="line">(查看当前操作系统内核信息) </div><div class="line"></div><div class="line"># cat /etc/issue | grep Linux </div><div class="line">Red Hat Enterprise Linux AS release 4 (Nahant Update 5) </div><div class="line">(查看当前操作系统发行版信息)</div></pre></td></tr></table></figure>
+<h2 id="查看机器型号"><a href="#查看机器型号" class="headerlink" title="查看机器型号"></a>查看机器型号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># dmidecode | grep &quot;Product Name&quot;</div></pre></td></tr></table></figure>
+<h2 id="查看网卡信息"><a href="#查看网卡信息" class="headerlink" title="查看网卡信息"></a>查看网卡信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># dmesg | grep -i eth</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -316,13 +321,13 @@ Quick">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/02/06/hello-world/">Hello World</a></p>
+        <p><span>本文标题:</span><a href="/2017/02/09/linux-operations-1/">linux-operations-1</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">cloudlounger</a></p>
-        <p><span>发布时间:</span>2017-02-06, 21:16:18</p>
-        <p><span>最后更新:</span>2017-02-06, 21:16:18</p>
+        <p><span>发布时间:</span>2017-02-09, 20:55:25</p>
+        <p><span>最后更新:</span>2017-02-09, 21:11:49</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/02/06/hello-world/" title="Hello World">http://yoursite.com/2017/02/06/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/02/06/hello-world/　　作者: cloudlounger" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/09/linux-operations-1/" title="linux-operations-1">http://yoursite.com/2017/02/09/linux-operations-1/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/02/09/linux-operations-1/　　作者: cloudlounger" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -334,12 +339,12 @@ Quick">
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
+        
+            <div id="article-nav-older" class="article-nav-title">
                 <a href="/2017/02/06/fist-blog/">
                     fist blog
                 </a>
             </div>
-        
         
     </nav>
 
@@ -349,7 +354,7 @@ Quick">
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#系统"><span class="toc-number">1.</span> <span class="toc-text">系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资源"><span class="toc-number">2.</span> <span class="toc-text">资源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#磁盘和分区"><span class="toc-number">3.</span> <span class="toc-text">磁盘和分区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络"><span class="toc-number">4.</span> <span class="toc-text">网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进程"><span class="toc-number">5.</span> <span class="toc-text">进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户"><span class="toc-number">6.</span> <span class="toc-text">用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#服务"><span class="toc-number">7.</span> <span class="toc-text">服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序"><span class="toc-number">8.</span> <span class="toc-text">程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看CPU信息（型号）"><span class="toc-number">9.</span> <span class="toc-text">查看CPU信息（型号）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看内-存信息"><span class="toc-number">10.</span> <span class="toc-text">查看内 存信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看系统信息"><span class="toc-number">11.</span> <span class="toc-text">查看系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看机器型号"><span class="toc-number">12.</span> <span class="toc-text">查看机器型号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看网卡信息"><span class="toc-number">13.</span> <span class="toc-text">查看网卡信息</span></a></li></ol>
         
     </div>
     <style>
@@ -385,7 +390,7 @@ Quick">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hello World　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"linux-operations-1　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -405,15 +410,15 @@ Quick">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/02/06/fist-blog/" title="上一篇: fist blog">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/02/06/fist-blog/" title="下一篇: fist blog">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
