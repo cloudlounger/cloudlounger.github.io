@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no" />
-<meta name="author" content="John Doe" />
+<meta name="author" content="cloudlounger" />
 
 
     
@@ -97,10 +97,10 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
+            <img src="/img/profile.png" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">John Doe</a></h1>
+          <h1 class="header-author"><a href="/">cloudlounger</a></h1>
         </hgroup>
 
         
@@ -137,13 +137,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -157,6 +157,8 @@
                         <ul>
                         
                             <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/categories/operation/">运维</a></li>
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
@@ -217,21 +219,23 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">cloudlounger</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
+                <img src="/img/profile.png" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">cloudlounger</a></h1>
             </hgroup>
             
             <nav class="header-menu">
                 <ul>
                 
                     <li><a href="/">主页</a></li>
+                
+                    <li><a href="/categories/operation/">运维</a></li>
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
@@ -255,7 +259,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -288,36 +292,24 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="Go-环境配置"><a href="#Go-环境配置" class="headerlink" title="Go 环境配置"></a>Go 环境配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>这里以linux环境下配置为例</p>
-<p><strong><em>Ubuntu或CentOS</em></strong>下，下载方式为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz</div></pre></td></tr></table></figure>
-<p>解压</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar zxf go1.7.4.linux-amd64.tar.gz</div></pre></td></tr></table></figure>
-<p>创建.profile文件（添加到.bashrc中，可以在开机启动的时候自动生效）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim .profile</div></pre></td></tr></table></figure>
-<p>加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export GOROOT=$HOME/go</div><div class="line">export PATH=$PATH:$GOROOT/bin</div></pre></td></tr></table></figure>
-<p>上面的<code>$HOME/go</code>为你的go安装包的解压路径。<br>生效配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source .profile</div></pre></td></tr></table></figure>
-<p>就完成简单的go的环境配置。</p>
-<p>在shell下，使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">go或者go env</div></pre></td></tr></table></figure>
-<p>命令查看是否安装成功。</p>
-<p><strong>markdown的测试：代码段测试 </strong></p>
-<p>Go Launuage Test</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">bytesToFidInfo</span><span class="params">(info *api.FidInfo, buf []<span class="keyword">byte</span>)</span></span> &#123;</div><div class="line">        info.Fsize = <span class="keyword">int64</span>(binary.LittleEndian.Uint64(buf))</div><div class="line">        info.Sid = binary.LittleEndian.Uint64(buf[<span class="number">8</span>:])</div><div class="line">        info.Soff = binary.LittleEndian.Uint32(buf[<span class="number">16</span>:])</div><div class="line">        info.Deleted = binary.LittleEndian.Uint16(buf[<span class="number">20</span>:])</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>$\sum_i^k(a^ib)<em>c$<br>居然不能直接支持latax，只能通过<a href="http://latex.codecogs.com/gif.latex?\sum_i^k(a^ib" target="_blank" rel="external">http://latex.codecogs.com/gif.latex?\sum_i^k(a^ib</a>)</em>c ，先变成gif图片才可以。弱爆了。</p>
-<p><img src="http://latex.codecogs.com/gif.latex?\\sum_i^k(a^ib)*c" alt=""></p>
-<p><img src="http://latex.codecogs.com/gif.latex?\\sum_i^k(a^ib)" alt=""></p>
-
+              <p>go 语言环境的搭建<br>
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/operation/">operation</a>
+    </div>
+
 
       
+      
+        <p class="article-more-link">
+          <a href="/2017/02/06/fist-blog/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -406,17 +398,17 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016-2017 John Doe
+                2017 cloudlounger
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -425,7 +417,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -437,30 +429,35 @@
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
 
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
